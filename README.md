@@ -1,4 +1,4 @@
-# learn-solidity
+# Learn Solidity
 Learn Solidity Step by Step
 
 
@@ -19,16 +19,19 @@ To Run these examples please follow following steps
        - ```ganache-cli```
        - This will create Test network
 
-# Compile Deploy and Test Project
+# Compile, Deploy and Test Project
 1. Go to project folder e.g
    - ```cd 01_HelloWorld```
 
 2. Inside that folder Compile with following command
-   - ```truffle.cmd compile```
+   - ```truffle.cmd compile``` on Windows
+   - ```truffle compile```
 
 3. Deploy Contract with following command
-   - ```truffle.cmd migrate```
+   - ```truffle.cmd migrate```  on Windows
+   - ```truffle migrate```
 
 
 4. Test Contract with following command
-   - ```truffle.cmd test```
+   - ```truffle.cmd test```  on Windows
+   - ```truffle test```

@@ -63,14 +63,21 @@ contract TestContract1 {
         Contract1 meta = Contract1(DeployedAddresses.Contract1());
         string memory a = meta.demoStrings1();
         
-        Assert.equal(a,"Hello World","A.length should be 19");
+        Assert.equal(a,"Hello World","A should be 'Hello World'");
         
     }
 
     function testConcatStrings2() public { 
         Contract1 meta = Contract1(DeployedAddresses.Contract1());
         string memory a = meta.demoStrings2();
-        Assert.equal(a,"HelloWorld","A.length should be 19");
+        Assert.equal(a,"HelloWorld","A should be 'HelloWorld'");
+        
+    }
+
+    function testStringArray() public { 
+        Contract1 meta = Contract1(DeployedAddresses.Contract1());
+        string memory a = meta.demoStringArray();
+        Assert.equal(a,"World","A should be 'World'");
         
     }
 }

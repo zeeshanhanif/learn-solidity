@@ -109,5 +109,11 @@ contract Contract1 {
         return st3;
     }
 
+    function demoStringArray() public returns (string) {
+        // Array for string type will have same rules as for any other array
+        // of int
+        string[2] memory st = ["Hello","World"];
+        return st[1];
+    }
 
 }
